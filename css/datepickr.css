@@ -1,0 +1,128 @@
+.datepickr-wrapper{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.datepickr-calendar{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 4px;
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 74%;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.open .datepickr-calendar{
+    display: block;
+}
+
+.datepickr-calendar .datepickr-months{
+    background: #363636;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-size: 120%;
+}
+
+.datepickr-calendar .datepickr-prev-month,
+.datepickr-calendar .datepickr-next-month{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 .4em;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.datepickr-calendar .datepickr-prev-month {
+    float: left;
+}
+
+.datepickr-calendar .datepickr-next-month {
+    float: right;
+}
+
+.datepickr-calendar .datepickr-current-month {
+    padding: 0 .5em;
+}
+
+.datepickr-calendar .datepickr-prev-month:hover,
+.datepickr-calendar .datepickr-next-month:hover {
+    background-color: #fff;
+    color: #363636;
+}
+
+.datepickr-calendar table {
+    border-collapse: collapse;
+    padding: 0;
+    width: 100%;
+}
+
+.datepickr-calendar thead{
+    font-size: 90%;
+    border-bottom: 1px solid #ccc;
+}
+
+.datepickr-calendar th,
+.datepickr-calendar td {
+    width: 14.3%;
+}
+
+.datepickr-calendar th {
+    text-align: center;
+    padding: 5px;
+}
+
+.datepickr-calendar td{
+    text-align: center;
+}
+
+.datepickr-calendar .datepickr-day {
+    display: block;
+    color: #363636;
+    background: #fff;
+    padding: 5px;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.datepickr-calendar .datepickr-day:hover {
+    color: #363636;
+    background-color: #999;
+
+}
+
+.datepickr-calendar .today .datepickr-day {
+    background-color: #363636;
+    color: #fff;
+}
+
+.datepickr-calendar .selected .datepickr-day {
+    background-color: #ddd;
+    color: #363636;
+}
+
+.datepickr-calendar .disabled .datepickr-day,
+.datepickr-calendar .disabled .datepickr-day:hover {
+    background-color: #eee;
+    border: 1px dotted #ccc;
+    color: #bbb;
+    cursor: default;
+}
+
+@media (max-width: 680px){
+    .datepickr-calendar{
+        font-size: 14px;
+    }
+}
