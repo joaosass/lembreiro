@@ -225,6 +225,9 @@ input, h2, p{
 }
 
 @-webkit-keyframes current{
+    0%{
+        border: 5px solid rgba(155,197,61,.37);
+    }
     50%{
         border: 5px solid rgba(155,197,61,1);
     }
@@ -234,6 +237,9 @@ input, h2, p{
 }
 
 @keyframes current{
+    0%{
+        border: 5px solid rgba(155,197,61,.37);
+    }
     50%{
         border: 5px solid rgba(155,197,61,1);
     }
@@ -243,6 +249,9 @@ input, h2, p{
 }
 
 @-webkit-keyframes lated{
+    0%{
+        border: 5px solid rgba(221,28,26,.37);
+    }
     50%{
         border: 5px solid rgba(221,28,26,1);
     }
@@ -252,6 +261,9 @@ input, h2, p{
 }
 
 @keyframes lated{
+    0%{
+        border: 5px solid rgba(221,28,26,.37);
+    }
     50%{
         border: 5px solid rgba(221,28,26,1);
     }
